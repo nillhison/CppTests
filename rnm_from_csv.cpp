@@ -30,6 +30,6 @@ int main(int argc, char *argv[]) {
     }
     
     for(const auto& line : database) {
-        system(buildCommand(line.first, douple.second).c_str());
+        system(buildCommand(line.first, line.second).c_str());
     }
 }
